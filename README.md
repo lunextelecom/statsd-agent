@@ -15,7 +15,7 @@ sudo apt-get install supervisor
 ```
 
 ##Installation
-
+```
 sudo easy_install statsd
 sudo easy_install psutil
 copy ./conf/statsd-agent.conf /etc/supervisor/conf.d
