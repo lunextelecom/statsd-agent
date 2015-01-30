@@ -2,6 +2,23 @@ statsd-agent
 ============
 Record system Metric such as CPU, Memory, Storage via to statsd, graphite
 
+##Install NTP to synchronized system tome
+```
+sudo apt-get install ntp
+
+edit /etc/ntp.conf
+
+replace
+server 0.ubuntu.pool.ntp.org
+server 1.ubuntu.pool.ntp.org
+server 2.ubuntu.pool.ntp.org
+server 3.ubuntu.pool.ntp.org
+
+with
+
+server us.pool.ntp.org
+```
+
 ##Install Supervisor
 ```
 sudo apt-get install supervisor
