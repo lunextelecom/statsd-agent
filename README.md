@@ -2,7 +2,7 @@ statsd-agent
 ============
 Record system Metric such as CPU, Memory, Storage via to statsd, graphite
 
-##Install NTP to synchronized system tome
+##Install NTP to synchronized system time
 ```
 sudo apt-get install ntp
 
