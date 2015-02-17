@@ -14,10 +14,10 @@ def disk(prefix):
 
 
 def cpu_times_percent(prefix):
-    value = psutil.cpu_percent(interval=1)
+    value = psutil.cpu_percent()
     c.gauge(prefix + '.percent', value)
 
-    cpu_times_percent = psutil.cpu_times_percent(interval=1)
+    cpu_times_percent = psutil.cpu_times_percent()
     c.gauge(prefix + '.times_percent.user', cpu_times_percent.user)
     c.gauge(prefix + '.times_percent.system', cpu_times_percent.system)
     c.gauge(prefix + '.times_percent.idle', cpu_times_percent.idle)
