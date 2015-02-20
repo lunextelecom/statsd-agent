@@ -28,13 +28,14 @@ sudo apt-get install supervisor
 ```
 git clone https://github.com/etsy/statsd.git /usr/local/statsd
 #edit ./conf/localConfig.js with the ip address of graphite
-copy ./conf/localConfig.js /usr/local/statsd
-copy ./conf/statsd.conf /etc/supervisor/conf.d
+cp ./conf/localConfig.js /usr/local/statsd
+cp ./conf/statsd.conf /etc/supervisor/conf.d
 
 ```
 ##Installation
 ```
+sudo apt-get install gcc python-dev 
 sudo easy_install statsd
 sudo easy_install psutil
-copy ./conf/statsd-agent.conf /etc/supervisor/conf.d
+cp ./conf/statsd-agent.conf /etc/supervisor/conf.d
 ```
