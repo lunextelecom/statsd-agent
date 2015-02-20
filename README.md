@@ -26,6 +26,7 @@ sudo apt-get install supervisor
 ```
 ##Install Statsd
 ```
+sudo apt-get install nodejs npm
 git clone https://github.com/etsy/statsd.git /usr/local/statsd
 #edit ./conf/localConfig.js with the ip address of graphite
 cp ./conf/localConfig.js /usr/local/statsd
