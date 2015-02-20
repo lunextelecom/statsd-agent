@@ -21,11 +21,12 @@ server us.pool.ntp.org
 
 ##Install Supervisor
 ```
+sudo apt-get git
 sudo apt-get install supervisor
 ```
 ##Install Statsd
 ```
-git checkout https://github.com/etsy/statsd.git /usr/local/statsd
+git clone https://github.com/etsy/statsd.git /usr/local/statsd
 #edit ./conf/localConfig.js with the ip address of graphite
 copy ./conf/localConfig.js /usr/local/statsd
 copy ./conf/statsd.conf /etc/supervisor/conf.d
