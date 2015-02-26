@@ -21,7 +21,7 @@ server us.pool.ntp.org
 
 ##Install Supervisor
 ```
-sudo apt-get git
+sudo apt-get install git
 sudo apt-get install supervisor
 ```
 ##Install Statsd
@@ -35,7 +35,7 @@ cp ./conf/statsd.conf /etc/supervisor/conf.d
 ```
 ##Installation
 ```
-sudo apt-get install gcc python-dev 
+sudo apt-get install gcc python-dev python-setuptools 
 sudo easy_install statsd
 sudo easy_install psutil
 cp ./conf/statsd-agent.conf /etc/supervisor/conf.d
