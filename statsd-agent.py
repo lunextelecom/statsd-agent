@@ -53,7 +53,7 @@ if __name__ == '__main__':
     hostname = socket.gethostname().lower().replace('.', '_')
     prefix = 'system.' + hostname
     global c
-    c = statsd.StatsClient('localhost', 8125)
+    c = statsd.StatsClient('127.0.0.1', 8125)
     while True:
         disk(prefix + '.disk')
         cpu_times_percent(prefix + '.cpu')
