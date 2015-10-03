@@ -39,4 +39,9 @@ sudo apt-get install gcc python-dev python-setuptools
 sudo easy_install statsd
 sudo easy_install psutil
 cp ./conf/statsd-agent.conf /etc/supervisor/conf.d
+cp ./conf/statsd.conf /etc/supervisor/conf.d
+
+#update supervisord to include these new configuration
+sudo supervisorctl reread
+sudo supervisorctl update
 ```
